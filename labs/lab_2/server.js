@@ -5,7 +5,7 @@ const server = net.createServer( (socket) => {
     socket.setEncoding('utf8')
     socket.on("data", (data) => {
         console.log(data);
-        socket.write(data)
+        socket.write(largestNumber(data))
     });
 });
 
@@ -16,4 +16,17 @@ server.listen(PORT, LOCALHOST, () => {
     console.log("server is running");
     
 });
+
+function largestNumber(string){
+    const newArr = string.split(",")
+    let max = 0;
+    for (let i = 0; i <  newArr.length; i++){
+        if(parseInt(newArr[i]) > max){
+            max = parseInt(newArr[i]);
+        }
+
+    }
+return max
+}
+
 
