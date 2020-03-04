@@ -13,3 +13,11 @@ const PORT = 5000;
 const LOCALHOST = '127.0.0.1';
 
 server.listen(PORT, LOCALHOST);
+
+// npm install --save-dev nodemon    (node mode for server keep runing all times) 
+// npm install -g nodemon
+// npm start 
+
+// "scripts": {
+//   "start": "nodemon"
+// },
