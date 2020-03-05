@@ -2,7 +2,7 @@
   "name": "12th_1_labs_http_server",
   "version": "1.0.0",
   "description": "",
-  "main": "calculatorApp.js",
+  "main": "calculator.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon"
@@ -11,5 +11,8 @@
   "license": "ISC",
   "devDependencies": {
     "nodemon": "^2.0.2"
+  },
+  "dependencies": {
+    "query-string": "^6.11.1"
   }
 }
